@@ -4,157 +4,311 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>JCN Consultancy — Technology · AI · Strategy</title>
-  <meta name="description" content="JCN Consultancy provides AI, software engineering, and strategic technology solutions for startups and enterprises.">
+  <meta name="description" content="JCN Consultancy provides enterprise-grade AI, software engineering and strategic technology services. Production-ready ML, cloud modernization, and architecture consulting." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><rect width=%22120%22 height=%22120%22 rx=%2216%22 fill=%22%230066cc%22/><text x=%2260%22 y=%2280%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22>J</text></svg>">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <meta name="theme-color" content="#0056d2">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JCN Consultancy — Technology · AI · Strategy">
+  <meta property="og:description" content="We partner with startups and enterprises to design, build and operate AI & software. Production ML, cloud, architecture & strategy." />
+  <meta property="og:image" content="https://jcnconsultancy.in/assets/logo.png">
+  <meta property="og:url" content="https://jcnconsultancy.in">
+  <meta property="og:type" content="website">
+
+  <!-- JSON-LD structured data (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JCN Consultancy",
+    "url": "https://jcnconsultancy.in",
+    "logo": "https://jcnconsultancy.in/assets/logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "contact@jcnconsultancy.in",
+      "contactType": "customer support",
+      "areaServed": "IN"
+    }],
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" id="top">
   <div class="container header-inner">
-    <a class="brand" href="#">
-      <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true">
-        <rect width="64" height="64" rx="10" fill="#0066cc"></rect>
-        <text x="20" y="44" font-size="30" fill="#fff" font-family="Arial" font-weight="bold">J</text>
-      </svg>
-      <span>JCN Consultancy</span>
+    <a class="brand" href="#top" aria-label="JCN Consultancy home">
+      <img src="assets/logo.png" alt="JCN Consultancy logo" class="logo">
+      <span class="brand-text">JCN Consultancy</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary navigation">
       <a href="#services">Services</a>
-      <a href="#industries">Industries</a>
-      <a href="#about">About</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#team">Team</a>
       <a href="#contact" class="cta">Contact</a>
     </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
   </div>
 </header>
 
 <main>
+
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Engineering Intelligence for Business Growth</h1>
-        <p class="tagline">We combine expertise in AI, software, and strategy to help startups and enterprises scale efficiently and securely.</p>
-        <p class="actions">
-          <a href="#contact" class="btn primary">Contact Us</a>
-          <a href="#services" class="btn">Our Services</a>
+        <h1 class="reveal">Engineering intelligence for measurable business outcomes</h1>
+        <p class="tagline reveal delay-1">Production-ready AI, resilient systems, and actionable strategy — enabling startups and enterprises to ship with confidence.</p>
+
+        <p class="actions reveal delay-2">
+          <a href="#contact" class="btn primary">Request a consultation</a>
+          <a href="#case-studies" class="btn">View case studies</a>
         </p>
-      </div>
-      <div class="hero-card">
-        <h3>Trusted by Innovators</h3>
-        <ul>
-          <li>Technology strategy for SaaS startups</li>
-          <li>End-to-end ML solutions for analytics platforms</li>
-          <li>Cloud modernization and API infrastructure</li>
+
+        <ul class="trust-list reveal delay-3" aria-hidden="true">
+          <li>Production ML pipelines</li>
+          <li>Cloud modernization</li>
+          <li>Architecture & technical due diligence</li>
         </ul>
       </div>
+
+      <aside class="hero-panel reveal delay-2" aria-labelledby="hero-panel-title">
+        <h3 id="hero-panel-title">Quick facts</h3>
+        <dl>
+          <dt>Engagements</dt><dd>Startups • SMEs • Enterprises</dd>
+          <dt>Delivery</dt><dd>Prototypes → Production → Support</dd>
+          <dt>Specialties</dt><dd>CV, NLP, MLOps, APIs, Cloud</dd>
+        </dl>
+      </aside>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section services">
     <div class="container">
-      <h2>Our Core Services</h2>
+      <h2>Services</h2>
+      <p class="section-intro">We provide practical, repeatable engineering and strategy services to reduce time-to-market and operational risk.</p>
+
       <div class="grid cards">
-        <article class="card">
-          <h3>Artificial Intelligence</h3>
-          <p>Model design, data pipelines, and deployment of production-ready AI systems. We build ML infrastructure that scales with your data.</p>
+        <article class="card reveal">
+          <h3>AI & Machine Learning</h3>
+          <p>End-to-end model lifecycle: data strategy, model development, validation, deployment, monitoring and retraining. Focus on reliability and explainability.</p>
+          <ul class="card-features">
+            <li>Data pipelines, feature stores</li><li>MLOps & CI for models</li><li>Model explainability & fairness</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Software Engineering</h3>
-          <p>End-to-end product development — backend APIs, DevOps, testing, and cloud integration with modern frameworks and CI/CD practices.</p>
+
+        <article class="card reveal delay-1">
+          <h3>Software & API Engineering</h3>
+          <p>Robust backend systems, microservices, and APIs built for scale with test automation and observability baked in.</p>
+          <ul class="card-features">
+            <li>FastAPI / Node / Go microservices</li><li>Secure authentication & RBAC</li><li>Automated testing</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Technical Consulting</h3>
-          <p>We help businesses make informed technology decisions — from architecture audits to cost optimization and digital transformation strategy.</p>
+
+        <article class="card reveal delay-2">
+          <h3>Cloud & Infrastructure</h3>
+          <p>Architect and implement cloud infrastructure, cost-optimized deployments, container orchestration, and CI/CD frameworks.</p>
+          <ul class="card-features">
+            <li>Kubernetes & Docker</li><li>Infrastructure as code</li><li>Cloud cost optimization</li>
+          </ul>
         </article>
-        <article class="card">
-          <h3>Data Analytics</h3>
-          <p>Turn raw data into actionable insights. We create dashboards, reporting systems, and analytical models that drive decision-making.</p>
+
+        <article class="card reveal delay-3">
+          <h3>Technical Advisory</h3>
+          <p>Architecture reviews, technical due diligence, engineering hiring plans, and product roadmap consultation.</p>
+          <ul class="card-features">
+            <li>Architecture audits</li><li>Security & compliance</li><li>Roadmaps & resourcing</li>
+          </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- INDUSTRIES -->
-  <section id="industries" class="section industries">
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="section case-studies">
     <div class="container">
-      <h2>Industries We Serve</h2>
-      <ul class="industries-list">
-        <li>Finance & FinTech</li>
-        <li>Healthcare & Life Sciences</li>
-        <li>Retail & E-commerce</li>
-        <li>Manufacturing & Logistics</li>
-        <li>Government & Public Sector</li>
-      </ul>
+      <h2>Selected Case Studies</h2>
+      <p class="section-intro">Practical summaries of meaningful outcomes we delivered for clients.</p>
+
+      <div class="project-grid">
+        <article class="project reveal">
+          <h3>Flood Detection (Computer Vision) — NGO</h3>
+          <p class="muted">Problem</p>
+          <p>Automate detection of flood-affected regions from satellite imagery to accelerate emergency response.</p>
+          <p class="muted">Solution & Results</p>
+          <ul>
+            <li>Trained U-Net segmentation pipeline with custom augmentation; built inference API and dashboard.</li>
+            <li>Achieved 92% IoU on held-out test set; enabled nightly batched processing for situational awareness.</li>
+            <li>Delivered a Dockerized stack + monitoring for 24/7 operations.</li>
+          </ul>
+        </article>
+
+        <article class="project reveal delay-1">
+          <h3>Resume Parsing & Screening — HR Tech</h3>
+          <p class="muted">Problem</p>
+          <p>Reduce manual resume screening time for high-volume hiring.</p>
+          <p class="muted">Solution & Results</p>
+          <ul>
+            <li>Built an NLP pipeline for entity extraction, skill matching and ranking; integrated with client ATS.</li>
+            <li>Reduced screening time by 60% and increased candidate quality score by 22%.</li>
+          </ul>
+        </article>
+
+        <article class="project reveal delay-2">
+          <h3>Demand Forecasting — Retail</h3>
+          <p class="muted">Solution & Results</p>
+          <ul>
+            <li>Developed time-series forecasting ensemble (Prophet + LSTM) with automated retraining and anomaly detection.</li>
+            <li>Improved inventory accuracy by ~25%, cutting stockouts and excess stock.</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section about">
+  <!-- METHODOLOGY -->
+  <section id="methodology" class="section methodology">
     <div class="container">
-      <h2>About JCN Consultancy</h2>
-      <p>Founded with a passion for technology and innovation, JCN Consultancy provides end-to-end technical and strategic services that help organizations embrace AI and digital transformation. We partner closely with clients to deliver reliable, measurable results.</p>
-      <div class="values-grid">
-        <div class="value">
-          <h4>Excellence</h4>
-          <p>We maintain the highest standards of quality and execution in everything we deliver.</p>
+      <h2>How we work — practical, low-risk engagement model</h2>
+      <div class="process-steps">
+        <div class="step reveal">
+          <h3>Discovery</h3>
+          <p>30–60 minute scoping calls, data availability review, success metrics and constraints documented.</p>
         </div>
-        <div class="value">
-          <h4>Integrity</h4>
-          <p>We believe in transparency, long-term relationships, and honest consulting.</p>
+        <div class="step reveal delay-1">
+          <h3>Proof of Value</h3>
+          <p>Short sprint (2–4 weeks) to validate core assumptions with a prototype or POC.</p>
         </div>
-        <div class="value">
-          <h4>Innovation</h4>
-          <p>We stay at the cutting edge of technology to bring you solutions that work in tomorrow’s world.</p>
+        <div class="step reveal delay-2">
+          <h3>Scale & Harden</h3>
+          <p>Productionization: testing, CI/CD, monitoring, security and scalable infra for sustained operations.</p>
+        </div>
+        <div class="step reveal delay-3">
+          <h3>Support & Knowledge Transfer</h3>
+          <p>Documentation, training and optionally a maintenance SLA to keep systems healthy.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section team">
+    <div class="container">
+      <h2>Leadership & Core Team</h2>
+      <p class="section-intro">Small senior team with hands-on experience delivering production systems.</p>
+
+      <div class="team-grid">
+        <div class="person reveal">
+          <img src="assets/logo.png" alt="Team" class="avatar">
+          <h4>Jyotirmay</h4>
+          <p class="role">Founder & Principal Engineer</p>
+          <p class="muted">Experience: ML systems, CV, production infra. Leads technical delivery and architecture.</p>
+        </div>
+
+        <div class="person reveal delay-1">
+          <img src="assets/logo.png" alt="Team" class="avatar">
+          <h4>Engineering Lead</h4>
+          <p class="role">Backend & DevOps</p>
+          <p class="muted">Designs resilient backends, CI/CD and infrastructure automation.</p>
+        </div>
+
+        <div class="person reveal delay-2">
+          <img src="assets/logo.png" alt="Team" class="avatar">
+          <h4>Data Scientist</h4>
+          <p class="role">ML Research & Production</p>
+          <p class="muted">Modeling, evaluation and MLOps practices for reliable deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources" class="section resources">
+    <div class="container">
+      <h2>Resources & Thought Leadership</h2>
+      <div class="resources-grid">
+        <article class="resource reveal">
+          <h4>Whitepaper — Production ML Best Practices</h4>
+          <p class="muted">Downloadable summary of our approach to robust ML deployment.</p>
+        </article>
+        <article class="resource reveal delay-1">
+          <h4>Blog — From Prototype to Production</h4>
+          <p class="muted">Practical posts on CI/CD for models, feature stores, and observability.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item reveal">
+        <summary>How long does a typical engagement take?</summary>
+        <p>Discovery: 1–2 weeks. POC: 2–6 weeks. Production: 4–12+ weeks depending on scope.</p>
+      </details>
+      <details class="faq-item reveal delay-1">
+        <summary>Do you provide post-launch support?</summary>
+        <p>Yes — options for hourly ad-hoc support or a monthly SLA depending on need.</p>
+      </details>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
     <div class="container">
-      <h2>Contact Us</h2>
-      <p>We’d love to discuss your next project or help you with a technical challenge. Reach out to us anytime — we typically respond within 24 hours.</p>
+      <h2>Contact</h2>
+      <p class="section-intro">Tell us about your challenge — we’ll propose a practical next step.</p>
 
       <div class="contact-grid">
-        <div class="contact-info">
+        <div class="contact-info reveal">
           <p><strong>Email:</strong> <a href="mailto:contact@jcnconsultancy.in">contact@jcnconsultancy.in</a></p>
-          <p><strong>Location:</strong> Remote / India</p>
-          <p><strong>Availability:</strong> Open to projects, consulting & collaborations</p>
+          <p><strong>Response time:</strong> Typically within 24 hours</p>
+          <p><strong>Engagements:</strong> Remote, global</p>
+          <p><strong>Phone:</strong> <a href="tel:+916377839757">+91-63778 39757</a></p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="mailto:contact@jcnconsultancy.in">Email us</a>
+            <a class="btn" href="#case-studies">View case studies</a>
+          </div>
         </div>
 
-        <form id="contactForm" class="contact-form">
-          <label>
-            <span>Your name</span>
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            <span>Your email</span>
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="6" required></textarea>
-          </label>
+        <form id="contactForm" class="contact-form reveal delay-1" autocomplete="off" aria-label="Contact form">
+          <label><span>Name</span><input type="text" name="name" required></label>
+          <label><span>Company</span><input type="text" name="company"></label>
+          <label><span>Email</span><input type="email" name="email" required></label>
+          <label><span>Phone (optional)</span><input type="tel" name="phone"></label>
+          <label><span>Project summary</span><textarea name="message" rows="6" required></textarea></label>
+
           <div class="form-actions">
-            <button type="submit" class="btn primary">Send Message</button>
+            <button type="submit" class="btn primary">Send inquiry</button>
+            <button type="reset" class="btn">Reset</button>
           </div>
+
           <p id="formStatus" class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>© <span id="year"></span> JCN Consultancy · <a href="mailto:contact@jcnconsultancy.in">contact@jcnconsultancy.in</a></p>
+    <div class="footer-left">
+      <p>© 2020 JCN Consultancy · <a href="mailto:contact@jcnconsultancy.in">contact@jcnconsultancy.in</a></p>
+      <p class="muted small">Registered: Remote / India</p>
+    </div>
     <nav class="footer-nav">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </footer>
